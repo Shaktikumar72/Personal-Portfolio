@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.Sidebar{
+    /* background-color: aqua; */
+    background-color: grey;
+    width: 12vw;
+    font-family: "Poppins", sans-serif;
+    height: 100vw;
+}
+.Sidebar nav{
+    padding: 43px;
+}
+.Sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px;
+    padding-left:10px ;
+
+}
+.Sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    /* background-color: blue; */
+    width: 88vw;
+    /* font-family: "Poppins", sans-serif; */
+}
+.Container{
+    display: flex;
+    
+}
+.InfoContainer{
+    margin: auto;
+    /* background-color: rgb(203, 84, 168);  */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.hello{
+    font-size: 85px;
+    font-family: "Source Code Pro", monospace;
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Source Code Pro", monospace;
+}
+/* .abouts{} */
+.moreabout{
+    margin-top: 3px;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+
+}
+.buttons{
+    margin: 34px;
+}
+.btn{
+    padding:9px 14px;
+    border-radius: 22px;
+    color: white;
+    font-weight: bold;
+    background-color: dodgerblue;
+    font-size: 21px;
+    margin: 10px 3px;
+    cursor: pointer; 
+}
+.btn-sm{
+    font-size: 12px;
+    padding: 9px 13px;
+    margin: 12px 0;
+}
+.btn:hover{
+    color:dodgerblue;
+    background-color: white;
+}
+
+
+.divInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.divPic img{
+    height: 58vh;
+   
+}
+.ContactFrom{
+    padding: 0px 34px;
+    padding-top: 144px;
+    font-family: "Source Code Pro", monospace;
+}
+.ContactFrom h1{
+    font-family: "Source Code Pro", monospace;
+    padding-top: 34px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+.ContactFrom form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.ContactFrom form div input{
+   width: 16vw;
+   border-radius: 5px;
+   margin: 3px 0;
+   padding: 3px;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+.blogitem{
+    margin: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.h1{
+    font-family: "Poppins", sans-serif;
+}
+.p{
+    font-family: "Poppins", sans-serif;
+}
+.Intro h2{
+    margin: 12px;
+    font-family: "Poppins", sans-serif;
+}
+.Intro p{
+     margin: 12px;
+    font-family: "Poppins", sans-serif;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+}
+.SkillContainer{
+    display: flex;
+    align-items: center;
+}
+.hamburger{
+    position: inherit;
+    cursor: pointer;
+    top:10px;
+    left: 10px; 
+}
+@media (max-width:600px){
+    *{
+        background-color: rgb(230, 146, 146);
+    }
+    .Sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    }
+}
+
+/* Services Page Styles */.service-slider {
+  margin-top: 40px;
+}
+
+.service-slider h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+  /* border: 2px solid black; */
+  box-shadow: 2px 2px 4px grey;
+}
