@@ -1,0 +1,391 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Layout */
+.Container {
+  display: flex;
+}
+
+/* Sidebar */
+.Sidebar {
+  background-color: #333;
+  color: white;
+  width: 12vw;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  z-index: 100;
+  position: fixed;
+}
+
+.Sidebar nav {
+  padding: 40px 20px;
+}
+
+.Sidebar nav li {
+  list-style: none;
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+.Sidebar nav li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.Sidebar nav li a:hover {
+  color: #00bfff;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+/* Hamburger */
+.hamburger {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 101;
+  display: none;
+}
+
+/* Main Content */
+.main {
+  margin-left: 12vw;
+  width: 88vw;
+  padding: 20px;
+}
+
+.BlogContainer h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* Blog Items */
+.blogitem {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.blogitem h2 {
+  margin-bottom: 10px;
+}
+
+.blogitem p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn, .btn-sm {
+  padding: 9px 14px;
+  border-radius: 22px;
+  color: white;
+  font-weight: bold;
+  background-color: dodgerblue;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 8px 13px;
+}
+
+.btn:hover, .btn-sm:hover {
+  background-color: white;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+
+/* Info Container (Homepage) */
+.InfoContainer {
+  margin: 144px auto;
+  height: 58vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.divInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 85px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+}
+
+.moreabout {
+  margin-top: 3px;
+  font-size: 10px;
+}
+
+/* Image */
+.divPic img {
+  height: 58vh;
+  border-radius: 50%;
+  border: 2px solid aquamarine;
+}
+
+/* Contact Form */
+.ContactFrom {
+  padding: 144px 34px 0;
+  font-family: "Source Code Pro", monospace;
+}
+
+.ContactFrom h1 {
+  padding-top: 34px;
+}
+
+#emailHelp {
+  font-size: 11px;
+  color: midnightblue;
+  margin: 0 5px;
+  padding-top: 3px;
+}
+
+.ContactFrom form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+}
+
+.ContactFrom form div input {
+  width: 16vw;
+  border-radius: 5px;
+  margin: 3px 0;
+  padding: 3px;
+}
+
+#form-check {
+  flex-direction: row;
+}
+
+#form-check input {
+  width: 24px;
+  margin: 3px 0;
+}
+
+/* Skill Section */
+.skill {
+  width: 265px;
+  height: 6px;
+  background-color: red;
+}
+
+.SkillContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Slider Section (Services Page) */
+.service-slider {
+  margin-top: 40px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.service-slider h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 4px grey;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Sidebar {
+    transform: translateX(-100%);
+    background-color: #111;
+  }
+
+  .Sidebar.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .cross {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
+
+.skillBox {
+  margin: 20px 0;
+}
+
+.skillBox label {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill-track {
+  background-color: #ddd;
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+}
+
+.skill-bar {
+  height: 100%;
+  background-color: dodgerblue;
+  border-radius: 6px;
+  width: 0%;
+  transition: width 1s ease-in-out;
+}
+
+.hamburger {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 102;
+  display: none;
+  color: white;
+}
+
+.cross {
+  font-size: 22px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    height: 100%;
+    background-color: #222;
+  }
+
+  .Sidebar.active {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
+
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 101;
+  cursor: pointer;
+  display: none;
+}
+
+.cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile view handling */
+@media (max-width: 768px) {
+  .Sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    height: 100vh;
+    background-color: #333;
+  }
+
+  .Sidebar.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
+
